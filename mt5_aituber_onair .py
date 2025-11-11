@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 MetaTrader 5 → AItuber on Air 統合システム (/direct-speech対応版)
@@ -188,7 +189,7 @@ class PriceMonitor:
                 emotion_tag = "[sad]"
             
             # メッセージを作成（感情タグ付き）
-            message_text = f"{emotion_tag} {jp_name} が {pips_change:.1f} pips {direction} しました。{level_msg}"
+            message_text = f"{emotion_tag} {jp_name} が {pips_change:.1f} pips {direction} したわ。{level_msg}"
             
             logger.info(f"★ 通知: {symbol}({jp_name}) {pips_change:.1f} pips {direction}")
             
@@ -314,7 +315,7 @@ async def websocket_handler(websocket):
         # AITuber on Air形式で送信
         welcome_msg = {
             "type": "chat",
-            "text": "[happy] MT5 FX価格監視システムに接続しました"
+            "text": "[happy] FX価格監視システムに接続しました"
         }
         await websocket.send(json.dumps(welcome_msg, ensure_ascii=False))
         
