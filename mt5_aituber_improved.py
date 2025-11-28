@@ -157,10 +157,10 @@ class PriceMonitor:
             emotion = "surprised"
         elif pips_change >= config.medium_threshold:
             level_msg = config.msg_medium
-            emotion = "happy" if price_change > 0 else "sad"
+            emotion = "happy" if price_change > 0 else "neutral"
         elif pips_change >= config.small_threshold:
             level_msg = config.msg_small
-            emotion = "happy" if price_change > 0 else "sad"
+            emotion = "happy" if price_change > 0 else "neutral"
         
         if level_msg:
             direction = "上昇" if price_change > 0 else "下降"
