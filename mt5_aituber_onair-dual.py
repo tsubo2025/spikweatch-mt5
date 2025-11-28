@@ -33,10 +33,10 @@ class Config:
     small_threshold: float = 5.0
     medium_threshold: float = 16.0
     large_threshold: float = 30.0
-    msg_small: str = "📊 すこしのうごきがあったわ"
-    msg_medium: str = "⚠️ ちゅうくらいのうごきがあったわ"
-    msg_large: str = "🚨 おい！なんかあっただろ"
-    
+    msg_small: str = "📊 すこしうごきがあったぞ"
+    msg_medium: str = "⚠️ ちゅうくらいのうごきがあったぞ"
+    msg_large: str = "🚨 おい！なんかあったぞ"
+
     ws_host: str = "0.0.0.0"
     ws_port: int = 8000
     http_port: int = 8080
